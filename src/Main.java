@@ -1,15 +1,36 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        CarrotSeller carrotSeller1 = new CarrotSeller();
+        CarrotSeller carrotSeller2 = new CarrotSeller();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        carrotSeller1.setName("Tomáš Kanský");
+        carrotSeller1.setBirthDate(LocalDate.of(2001,9,5));
+        carrotSeller1.setNumberOfContracts(36);
+        carrotSeller1.setCarrotsSoldTons(4.87);
+        carrotSeller1.setSenior(false);
+
+        carrotSeller2.setName("Daniel Mutl");
+        carrotSeller2.setBirthDate(LocalDate.of(2001,9,19));
+        carrotSeller2.setNumberOfContracts(23);
+        carrotSeller2.setCarrotsSoldTons(2.34);
+        carrotSeller2.setSenior(false);
+
+        System.out.println("*** PŘÍBĚH O PRODEJCÍCH MRKVÍ ***");
+        System.out.println();
+        System.out.println("Dovol mi říct ti příběh o dvou prodejcích mrkví.");
+        System.out.println();
+        System.out.println("Na tržišti se potkali dva rivalové " + carrotSeller1.getName() +
+                " narozený " + carrotSeller1.getBirthDate() + ", který se pyšnil, tím, že má už " +
+                carrotSeller1.getNumberOfContracts() + " uzavřených smluv a prodal přes " +
+                carrotSeller1.getCarrotsSoldTons() + " tun mrkví,\na jeho soupeř " +
+                carrotSeller2.getName() + ", jenž věří, že úspěch se neměří jen čísly," +
+                " ale i důvěrou zákazníků.");
+        System.out.println();
+        System.out.println("--- Příběh dál nepokračuje, protože během programování " +
+                "jsem se moc unavil ---");
+        System.out.println();
+        System.out.println("Je " + carrotSeller2.getName() + " senior? " + carrotSeller1.isSenior());
     }
 }
