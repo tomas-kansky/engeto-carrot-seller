@@ -31,6 +31,6 @@ public class Main {
         System.out.println("--- Příběh dál nepokračuje, protože během programování " +
                 "jsem se moc unavil ---");
         System.out.println();
-        System.out.println("Je " + carrotSeller2.getName() + " senior? " + carrotSeller1.isSenior());
+        System.out.println("Je " + carrotSeller2.getName() + " senior? " + carrotSeller2.isSenior());
     }
 }
