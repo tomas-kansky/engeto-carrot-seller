@@ -32,6 +32,5 @@ public class Main {
                 "jsem se moc unavil ---");
         System.out.println();
         System.out.println("Je " + carrotSeller2.getName() + " senior? " + carrotSeller2.isSenior());
-        
     }
 }
